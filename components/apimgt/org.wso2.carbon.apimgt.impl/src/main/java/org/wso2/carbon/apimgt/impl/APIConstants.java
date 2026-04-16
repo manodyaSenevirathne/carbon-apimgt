@@ -1582,6 +1582,7 @@ public final class APIConstants {
     public static final String ENABLED = "Enabled";
     public static final String DISABLED = "Disabled";
     public static final int API_RESPONSE_CACHE_TIMEOUT = 300;
+    public static final String UTC_TIME_ZONE = "UTC";
 
     public static class ApplicationStatus {
 
@@ -1860,6 +1861,7 @@ public final class APIConstants {
     public static final String PROXY_USERNAME = "ProxyConfig.Username";
     public static final String PROXY_PASSWORD = "ProxyConfig.Password";
     public static final String NON_PROXY_HOSTS = "ProxyConfig.NonProxyHosts";
+    public static final String TARGET_PROXY_HOSTS = "ProxyConfig.TargetProxyHosts";
     public static final String PROXY_PROTOCOL = "ProxyConfig.Protocol";
 
     public static final String KEYMANAGER_HOSTNAME = "keyManagerHostname";
@@ -3365,9 +3367,6 @@ public final class APIConstants {
         public static final String TOPIC_CACHE_INVALIDATION = "cacheInvalidation";
         public static final String TOPIC_KEY_MANAGER = "keyManager";
         public static final String TOPIC_NOTIFICATION = "notification";
-        public static final String TOPIC_OPAQUE_API_KEY_INFO = "opaqueAPIKeyInfo";
-        public static final String TOPIC_OPAQUE_API_KEY_ASSOCIATION_INFO = "opaqueAPIKeyAssociationInfo";
-        public static final String TOPIC_API_KEY_USAGE = "apiKeyUsage";
         public static final String TOPIC_ASYNC_WEBHOOKS_DATA = "asyncWebhooksData";
     }
 
@@ -3444,6 +3443,7 @@ public final class APIConstants {
         public static final String USAGE_TYPE = "usage_type";
         public static final String INFO_TYPE = "info_type";
         public static final String TOKEN_REVOCATION_EVENT = "token_revocation";
+        public static final String TOKEN_REVOCATION_BATCH_EVENT = "token_revocation_batch";
         public static final String API_KEY_USAGE_EVENT = "api_key_usage";
         public static final String API_KEY_INFO_EVENT = "api_key_info";
         public static final String CONSUMER_APP_REVOCATION_EVENT
@@ -3465,12 +3465,14 @@ public final class APIConstants {
         public static final String EXPIRES_AT = "expiresAt";
         public static final String STATUS = "status";
         public static final String EVENT_ID = "eventId";
+        public static final String EVENT_TYPE = "eventType";
         public static final String TENANT_ID = "tenantId";
         public static final String TENANT_DOMAIN = "tenant_domain";
         public static final String ORG_ID = "org_id";
         public static final String APPLICATION_TOKEN_TYPE_OAUTH2 = "Default";
         public static final String EXPIRY_TIME = "expiryTime";
         public static final String REVOCATION_TIME = "revocationTime";
+        public static final String REVOKED_TOKENS_LIST = "revokedTokensList";
         public static final String LAST_USED_TIME = "lastUsedTime";
         public static final String ORGANIZATION = "organization";
         public static final String STREAM_ID = "streamId";
@@ -3478,7 +3480,6 @@ public final class APIConstants {
         public static final String ENTITY_TYPE = "entityType";
         public static final String ENTITY_TYPE_CLIENT_ID = "CLIENT_ID";
         public static final String ENTITY_TYPE_USER_ID = "USER_ID";
-        public static final String EVENT_TYPE = "eventType";
     }
 
     //Constants related to user password
@@ -3965,6 +3966,8 @@ public final class APIConstants {
         public static final int DEFAULT_CLEANUP_STARTUP_DELAY = 60;
 
         public static final String PLATFORM_GATEWAY_CONNECT_CONFIGURATION = "PlatformGatewayConnectConfiguration";
+        public static final String UNIVERSAL_GATEWAY_VERSIONS = "UniversalGatewayVersions";
+        public static final String VERSION = "Version";
         public static final String CONNECT_GATEWAYS = "ConnectGateways";
         public static final String CONNECT = "Connect";
         public static final String REGISTRATION_TOKEN = "RegistrationToken";
@@ -3972,6 +3975,8 @@ public final class APIConstants {
         public static final String CONNECT_DISPLAY_NAME = "DisplayName";
         public static final String CONNECT_DESCRIPTION = "Description";
         public static final String CONNECT_URL = "Url";
+        public static final String API_KEY_NOTIFICATION = "APIKeyNotification";
+        public static final String QUEUE_SIZE = "QueueSize";
 
         public enum GatewayRegistrationResponse {
             NOT_RESPONDED,
